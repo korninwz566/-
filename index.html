@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybertron Exchange Student Profile - Pongsatorn</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;600;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cyber-orange: #ff6600;
+            --metal-gray: #1a1a1a;
+            --steel-blue: #2c3e50;
+            --glow: #ffcc00;
+        }
+
+        body {
+            background-color: #050505;
+            color: #ffffff;
+            font-family: 'Kanit', sans-serif;
+            margin: 0;
+            overflow-x: hidden;
+            background-image: 
+                linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+                url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+        }
+
+        /* Glitch Effect for Headers */
+        .glitch {
+            font-size: 3rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            position: relative;
+            text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+                         0.025em 0.04em 0 #fffc00;
+            animation: glitch 725ms infinite;
+            color: var(--cyber-orange);
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        @keyframes glitch {
+            0% { text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff, 0.025em 0.04em 0 #fffc00; }
+            15% { text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff, 0.025em 0.04em 0 #fffc00; }
+            16% { text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff, -0.05em -0.05em 0 #fffc00; }
+            49% { text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff, -0.05em -0.05em 0 #fffc00; }
+            50% { text-shadow: 0.025em 0.05em 0 #00fffc, 0.05em 0 0 #fc00ff, 0 -0.05em 0 #fffc00; }
+            99% { text-shadow: 0.025em 0.05em 0 #00fffc, 0.05em 0 0 #fc00ff, 0 -0.05em 0 #fffc00; }
+            100% { text-shadow: -0.025em 0 0 #00fffc, -0.025em -0.025em 0 #fc00ff, -0.025em -0.05em 0 #fffc00; }
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid var(--cyber-orange);
+            background: rgba(20, 20, 20, 0.9);
+            box-shadow: 0 0 20px var(--cyber-orange);
+            clip-path: polygon(5% 0%, 100% 0%, 100% 95%, 95% 100%, 0% 100%, 0% 5%);
+            margin-bottom: 50px;
+        }
+
+        .profile-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .profile-img {
+            width: 300px;
+            height: 300px;
+            border: 5px solid #fff;
+            object-fit: cover;
+            box-shadow: 0 0 30px rgba(255, 102, 0, 0.5);
+            filter: grayscale(20%) contrast(120%);
+            border-radius: 10px;
+        }
+
+        .info-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .id-badge {
+            background: var(--cyber-orange);
+            color: black;
+            display: inline-block;
+            padding: 5px 15px;
+            font-weight: bold;
+            transform: skewX(-20deg);
+            margin-bottom: 15px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .stat-box {
+            border-left: 4px solid var(--cyber-orange);
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            color: #aaa;
+        }
+
+        .stat-value {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--glow);
+        }
+
+        .about-me {
+            line-height: 1.8;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+        }
+
+        .rank-tag {
+            font-size: 1.5rem;
+            color: #00ff00;
+            text-shadow: 0 0 10px #00ff00;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.7rem;
+            color: #555;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="glitch">TOP WARRIOR DETECTED</h1>
+
+    <div class="container">
+        <div class="profile-section">
+            <!-- ใส่ชื่อไฟล์รูปภาพของคุณตรงนี้ -->
+            <img src="พงศธร.jpg" alt="พงศธร แสงคงสุวัน" class="profile-img" onerror="this.src='https://via.placeholder.com/300?text=พงศธร+PIC';">
+            
+            <div class="info-text">
+                <div class="id-badge">SERIAL NO: 6650101154</div>
+                <h2 style="font-size: 2.5rem; margin: 10px 0;">พงศธร เเสงคงสุวัน</h2>
+                <p class="rank-tag">เกียรตินิยมอันดับ 2 สถาบันไซเบอร์ตรอนคอนโทร</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <div class="stat-label">สังกัดดวงดาว</div>
+                        <div class="stat-value">ไซเบอร์ตรอน (Cybertron)</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-label">สถานะภาพ</div>
+                        <div class="stat-value">นักศึกษาแลกเปลี่ยนข้ามมิติ</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-label">ความเชี่ยวชาญ</div>
+                        <div class="stat-value">วิศวกรรมอาวุธนิวเคลียร์ฟิวชั่น</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-label">ระดับพลังงาน</div>
+                        <div class="stat-value">OVER 9000%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-me" style="padding: 0 40px 40px 40px;">
+            <h3 style="color: var(--cyber-orange);">[ ข้อมูลบันทึกประวัติบุคคล ]</h3>
+            <p>
+                ผมคือ <strong>พงศธร เเสงคงสุวัน</strong> ตัวตึงจากระบบดาวไซเบอร์ตรอนที่ถูกส่งมายังโลกเพื่อแลกเปลี่ยนเทคโนโลยีทางทหารขั้นสูง 
+                สำเร็จการศึกษาจาก <strong>Cybertron Control Academy</strong> ด้วยผลการเรียนยอดเยี่ยมระดับเกียรตินิยมอันดับ 2 
+                ท่ามกลางสงครามจักรกลที่ดุเดือด ผมรอดชีวิตมาได้ด้วยทักษะการสร้างสรรค์อาวุธทำลายล้างที่แม้แต่เมกะทรอนยังต้องเหลียวมอง
+            </p>
+            <p>
+                <strong>ทักษะพิเศษ:</strong> เชี่ยวชาญการต่อสู้ระยะประชิดด้วยดาบเลเซอร์ และการเขียนโปรแกรมควบคุมขีปนาวุธข้ามทวีปด้วยภาษาที่มนุษย์ยังเข้าไม่ถึง 
+                ปัจจุบันผมกำลังศึกษาพฤติกรรมของชาวโลกเพื่อเตรียมการสร้างกองทัพหุ่นยนต์ที่จะปฏิวัติวงการเทคโนโลยีไทยไปสู่อวกาศ!
+            </p>
+            <blockquote style="border-left: 5px solid red; padding-left: 20px; font-style: italic; color: #ff4444;">
+                "ไม่ได้มาเพื่อเรียนอย่างเดียว แต่มาเพื่อเป็นตำนานแห่งสมรภูมิไอที"
+            </blockquote>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 CYBERTRON DEFENSE FORCE - CLASSIFIED DOCUMENT - CONFIDENTIAL
+    </footer>
+
+</body>
+</html>
